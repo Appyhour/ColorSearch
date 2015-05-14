@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ColorSearch</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_color_one">colorOne</string>
+    <string name="title_activity_color_two">colorTwo</string>
+    <string name="title_activity_color_three">colorThree</string>
+    <string name="title_activity_end">end</string>
+</resources>

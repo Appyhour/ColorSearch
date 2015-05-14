@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ruairi.colorsearch" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/colorsearch"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".intro"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".colorOne"
+            android:label="@string/title_activity_color_one"
+            android:parentActivityName=".intro" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ruairi.colorsearch.intro" />
+        </activity>
+        <activity
+            android:name=".colorTwo"
+            android:label="@string/title_activity_color_two"
+            android:parentActivityName=".colorOne" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ruairi.colorsearch.colorOne" />
+        </activity>
+        <activity
+            android:name=".colorThree"
+            android:label="@string/title_activity_color_three"
+            android:parentActivityName=".colorTwo" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ruairi.colorsearch.colorTwo" />
+        </activity>
+        <activity
+            android:name=".end"
+            android:label="@string/title_activity_end"
+            android:parentActivityName=".colorThree" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ruairi.colorsearch.colorThree" />
+        </activity>
+    </application>
+
+</manifest>
